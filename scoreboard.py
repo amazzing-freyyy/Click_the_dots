@@ -73,7 +73,7 @@ class Scoreboard:
         sortedContent=''
         for i in sortedDic:
             if len(i[1])<3:
-                sortedContent=SortedContent + f'{i[1]}   {i[0]:.4}\n'
+                sortedContent=sortedContent + f'{i[1]}   {i[0]:.4}\n'
             else:
                 sortedContent= sortedContent + f'{i[1]} {i[0]:.4}\n'
         f.write(sortedContent)
